@@ -13,7 +13,7 @@ const Card = ({ src, path, title }) => {
   };
 
   return (
-    <NavLink to={path} onClick={() => (window.location.href = path)}>
+    <NavLink to={path}>
       <div
         className='card'
         onMouseEnter={handleCardMouseEnter}
