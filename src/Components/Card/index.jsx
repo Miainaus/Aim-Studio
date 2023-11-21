@@ -1,6 +1,6 @@
 import React from "react";
 import "./card.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 const Card = ({ src, path, title }) => {
@@ -13,19 +13,17 @@ const Card = ({ src, path, title }) => {
   };
 
   return (
-    <Link to={path} onClick={() =>
-      (window.location.href = path)
-    }>
+    <NavLink to={path} onClick={() => (window.location.href = path)}>
       <div
         className='card'
         onMouseEnter={handleCardMouseEnter}
         onMouseLeave={handleCardMouseLeave}
       >
         <img src={src} alt='project' />
-        {cardFilter&&<div className='card-cover'></div>}
+        {cardFilter && <div className='card-cover'></div>}
         <p className={`${cardFilter && "card-title"}`}>{title}</p>
       </div>
-    </Link>
+    </NavLink>
   );
 };
 

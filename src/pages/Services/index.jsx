@@ -31,7 +31,11 @@ const Services = () => {
       {data ? (
         <div className='services-container'>
           {data.map((service, index) => (
-            <Card title={service.title} src={service.src} path={`/services/${service.title}`} />
+            <Card
+              title={service.title}
+              src={service.src}
+              path={`/services/${service.title}`}
+            />
           ))}
           <Card
             title={"Contact"}
