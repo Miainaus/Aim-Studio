@@ -83,13 +83,8 @@ const Home = () => {
         ) : (
           "Loading..."
         )}
-        <Link
-          to='/projects'
-          onClick={() => {
-            window.location.href = "/projects";
-          }} className='home-projects'
-        >
-          <div >
+        <Link to='/projects' className='home-projects'>
+          <div>
             More Projects <GoArrowRight />
           </div>
         </Link>

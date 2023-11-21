@@ -25,36 +25,18 @@ const Header = () => {
   return (
     <div>
       <nav className='header'>
-        <Link
-          to='/'
-          className='logo'
-          onClick={() => {
-            window.location.href = "/";
-          }}
-        >
+        <Link to='/' className='logo'>
           <img src={Logo} alt='logo' />
         </Link>
         <span onClick={() => setHam(!ham)} className='switch-ham'>
           <i>{ham ? <AiOutlineClose /> : <GiHamburgerMenu />}</i>
         </span>
         <div className={`${ham && "hamburger-links"} closed`}>
-          <NavLink
-            to='/'
-            onClick={() => {
-              window.location.href = "/";
-            }}
-          >
+          <NavLink to='/'>
             <div>HOME</div>
           </NavLink>
           <div className='ham-inner'>
-            <NavLink
-              to='/services'
-              onClick={() => {
-                window.location.href = "/services";
-              }}
-            >
-              SERVICES
-            </NavLink>
+            <NavLink to='/services'>SERVICES</NavLink>
             <button
               className='drop-button'
               onClick={() => setSerDropdown(!serDropdown)}
@@ -86,21 +68,11 @@ const Header = () => {
             </div>
           )}
           <div className='ham-inner'>
-            <NavLink
-              to='/projects'
-              onClick={() => {
-                window.location.href = "/projects";
-              }}
-            >
+            <NavLink to='/projects'>
               <div>PROJECTS</div>
             </NavLink>
           </div>
-          <NavLink
-            to='/contact'
-            onClick={() => {
-              window.location.href = "/contact";
-            }}
-          >
+          <NavLink to='/contact'>
             <div>CONTACT</div>
           </NavLink>
         </div>

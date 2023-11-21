@@ -3,7 +3,11 @@ import "./project.css";
 import { useParams, Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { BsArrowsAngleContract,BsArrowLeft,BsArrowRight } from "react-icons/bs";
+import {
+  BsArrowsAngleContract,
+  BsArrowLeft,
+  BsArrowRight,
+} from "react-icons/bs";
 
 const Project = () => {
   const params = useParams();
@@ -78,9 +82,6 @@ const Project = () => {
           <Link
             to={`/projects/${data.projects.id - 1}`}
             className='prev-project'
-            onClick={() =>
-              (window.location.href = `/projects/${data.projects.id - 1}`)
-            }
           >
             <BsArrowLeft /> Prev Project
           </Link>
@@ -88,11 +89,6 @@ const Project = () => {
           <Link
             to={`/projects/${Number(data.projects.id) + 1}`}
             className='next-project'
-            onClick={() =>
-              (window.location.href = `/projects/${
-                Number(data.projects.id) + 1
-              }`)
-            }
           >
             Next Project <BsArrowRight />
           </Link>
