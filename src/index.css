@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,800&family=DM+Serif+Display&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 0px;
+}
+h1 {
+  font-family: "DM Serif Display", serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding-bottom: 1px;
+  transition: all 0.3s ease-in-out;
+}
+.home,
+.services,.projects,.contact{
+  display: flex;
+  width: 100vw;
+  min-height: 120vh;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding-bottom: 4rem;
+}
+@keyframes fade-in {
+  0% { opacity: 0; }
+  50%{ opacity: .5; }
+  100% { opacity: 1; }
+}
+
+

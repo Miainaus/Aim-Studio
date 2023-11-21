@@ -1,0 +1,28 @@
+.footer {
+  width: 110vw;
+  height: fit-content;
+  color: #a9a9a9;
+  padding: .5rem 0;
+  z-index: 5;
+  font-family: "serif";
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  background-color: black;
+}
+.footer p {
+  margin: 0;
+  padding: 0;
+}
+.footer a {
+  color: #a9a9a9;
+}
+.footer a:hover {
+  border-bottom: 1px solid #a9a9a9;
+}
+.footer .webDesign {
+  color: #a9a9a9;
+  font-size: 0.6rem;
+}

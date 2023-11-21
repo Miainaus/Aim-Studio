@@ -1,0 +1,153 @@
+.bigImage {
+  display: none;
+}
+.project-carousel {
+  display: block;
+  min-height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0);
+}
+.project-carousel span {
+  position: absolute;
+  top: 5vh;
+  right: 5vh;
+  color: #fff;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.project-carousel span:hover {
+  transform: scale(1.2);
+}
+.project-carousel button {
+  border: none;
+  width: 5.4rem;
+  height: 4rem;
+  margin: -18vh 2px 0 5px;
+  background-color: black;
+}
+.project-carousel .active {
+  background-color: #fff;
+}
+.project {
+  min-height: 110vh;
+  padding-bottom: 2vh;
+  position: relative;
+}
+.project a {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.project a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.project .prev-project {
+  margin: 2vh 70vw 2vh 5vw;
+}
+.project .next-project {
+  margin: 2vh 5vw 2vh 70vw;
+}
+.project-style {
+  display: none;
+}
+.project-desc {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+.project-img {
+  width: 100%;
+}
+.project-img img {
+  width: 100%;
+}
+.project-info {
+  width: 80%;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projectImage-container {
+  margin-top: 2rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.projectImage-container .img-box {
+  width: 90%;
+  position: relative;
+}
+.projectImage-container .img-box button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  border: none;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.projectImage-container .img-box button:hover {
+  font-size: 1.2rem;
+  opacity: 0.6;
+  background-color: #eeeeee;
+}
+
+.projectImage-container img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+@media (min-width: 780px) {
+  .project-desc {
+    margin-top: 5vh;
+    width: 100vw;
+    height: 50vh;
+    flex-direction: row;
+    background-color: #eeeeee;
+  }
+  .project-img {
+    width: 60%;
+    height: 100%;
+  }
+  .project-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .project-info {
+    width: 40%;
+    padding: 2rem 5rem;
+  }
+  .projectImage-container {
+    padding: 2rem;
+    flex-direction: row;
+  }
+  .projectImage-container .img-box {
+    width: 30%;
+  }
+  .project .prev-project {
+    margin: 2vh 80% 2vh 5vw;
+  }
+  .project .next-project {
+    margin: 2vh 5vw 2vh 80%;
+  }
+}
