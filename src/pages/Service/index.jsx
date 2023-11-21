@@ -1,6 +1,6 @@
 import React from "react";
 import "./service.css";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Service = () => {
   const params = useParams();
