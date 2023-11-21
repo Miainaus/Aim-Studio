@@ -1,7 +1,6 @@
 {
   "name": "aimstudio",
   "version": "0.1.0",
-  "homepage": "https://miainaus.github.io/Aim-Studio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
