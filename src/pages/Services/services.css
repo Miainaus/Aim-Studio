@@ -28,6 +28,7 @@
   background-color: transparent;
 }
 .services-desc h1 {
+  text-transform: capitalize;
   animation: fade-in 1s ease-in-out;
   font-size: 2rem;
   letter-spacing: 1px;
@@ -36,7 +37,7 @@
 }
 .services-desc p {
   animation: fade-in 1s ease-in-out;
-  font-size: .8rem;
+  font-size: 0.8rem;
   width: 50vw;
   line-height: 1rem;
 }
@@ -59,6 +60,14 @@
   }
   .services .card .card-cover {
     height: 94%;
+  }
+  .services-desc h1 {
+    text-transform: capitalize;
+    font-size: 4rem;
+  }
+  .services-desc p {
+    font-size: 1.7rem;
+    line-height: 2.1rem;
   }
   .card img {
     width: 100%;
