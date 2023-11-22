@@ -7,54 +7,52 @@
   align-items: center;
   gap: 3rem;
 }
-.service h1{
+.service h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-.service p{
+.service p {
   text-align: center;
   padding: 0;
   margin: 0;
   font-size: 1.1rem;
 }
-.service-detail{
+.service-detail {
   width: 80vw;
- 
 }
-.service-detail ul{
+.service-detail ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 1rem;
 }
-.service img{
+.service img {
   width: 100%;
   height: 40vh;
 }
 @media (min-width: 768px) {
-  .service{
+  .service {
     padding: 3rem 6vw;
     justify-content: flex-start;
   }
-  .service p{
+  .service p {
     text-align: left;
     padding: 0 3rem;
     font-size: 1.1rem;
   }
-  .service-detail{
-    color: #61677A;
+  .service-detail {
+    color: #61677a;
     font-size: 1.1rem;
     display: flex;
     gap: 5rem;
     justify-content: center;
     align-items: center;
   }
- 
-  .service img{
+
+  .service img {
     width: 50%;
     height: 45vh;
   }
-  
- }
+}
