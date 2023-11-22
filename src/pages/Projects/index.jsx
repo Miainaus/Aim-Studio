@@ -18,6 +18,10 @@ const Projects = () => {
     const commercialData = resource.filter((item) => item.tag === "commercial");
     setData(commercialData);
   };
+  const handleRenovation = () => {
+    const renovationData = resource.filter((item) => item.tag === "renovation");
+    setData(renovationData);
+  };
   const handleMulti = () => {
     const multiData = resource.filter((item) => item.tag === "multi-units");
     setData(multiData);
@@ -42,6 +46,7 @@ const Projects = () => {
         <button onClick={handleCommercial}>Commercial</button>
         <button onClick={handleMulti}>Multi-units</button>
         <button onClick={handleResidential}>Residential</button>
+        <button onClick={handleRenovation}>Renovation</button>
       </div>
       <div className='project-container'>
         {data.map((project) => {

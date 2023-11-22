@@ -54,7 +54,7 @@ const Header = () => {
                   <NavLink to='/services/commercial'>Commercial</NavLink>
                 </li>
                 <li>
-                  <NavLink to='/services/hospitality'>Hospitality</NavLink>
+                  <NavLink to='/services/renovation'>Renovation</NavLink>
                 </li>
                 <li>
                   <NavLink to='/services/interiors'>Interiors</NavLink>
@@ -100,7 +100,7 @@ const Header = () => {
                     <NavLink to='/services/commercial'>Commercial</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/services/hospitality'>Hospitality</NavLink>
+                    <NavLink to='/services/renovation'>Renovation</NavLink>
                   </li>
                   <li>
                     <NavLink to='/services/interiors'>Interiors</NavLink>

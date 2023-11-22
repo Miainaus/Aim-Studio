@@ -1,6 +1,7 @@
 import React from "react";
 import "./service.css";
 import { useParams } from "react-router-dom";
+import { GoDotFill } from "react-icons/go";
 
 const Service = () => {
   const params = useParams();
@@ -14,11 +15,20 @@ const Service = () => {
   }, [params.title]);
   console.log(data);
   return data ? (
-    <div className="service">
+    <div className='service'>
       <h1>{data[0].title}</h1>
       <p>{data[0].desc}</p>
-      <img src={data[0].src} alt="" />
-    </div>) : (
+      <div className='service-detail'>
+        <img src={data[0].src} alt='' />
+        <ul>
+          {data[0].details.map((detail) => (
+            <li><GoDotFill /> {detail}</li>
+          ))}
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  ) : (
     "Loading..."
   );
 };

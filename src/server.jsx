@@ -20,7 +20,7 @@ createServer({
     });
     server.create("project", {
       id: 2,
-      tag: "commercial",
+      tag: "renovation",
       address: "Moncrieff s8",
       imgURL: [
         "https://images.unsplash.com/photo-1604014238245-6ee85bbee7ef?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -79,6 +79,15 @@ createServer({
       desc: [
         "So we design homes accordingly taking into consideration factors such as the occupants’ personalities, living habits and social lives, rather than simply applying a cookie cutter methodology.",
       ],
+      details: [
+        "Building Design",
+        "Custom New Homes",
+        "Architectural Drafting",
+        " BASIX Certificates (single dwellings)",
+        "3D Illustrations",
+        "Marketing floor plans",
+        "DA Submissions and handing the process",
+        "Site Analysis and help with understanding your site constraints"],
       src: "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     });
     server.create("service", {
@@ -87,13 +96,25 @@ createServer({
       desc: [
         "So we design homes accordingly taking into consideration factors such as the occupants’ personalities, living habits and social lives, rather than simply applying a cookie cutter methodology.",
       ],
+      details: [
+        "Whether creating a new commercial property or refurbishing an existing building, we pride ourselves on creating inspirational designs that are functional, aesthetically pleasing and a strong reflection of our commercial clients’ brands.",
+      ],
       src: "https://images.unsplash.com/photo-1627750673161-02af15c7c722?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     });
     server.create("service", {
       id: 3,
-      title: "hospitality",
+      title: "renovation",
       desc: [
         "So we design homes accordingly taking into consideration factors such as the occupants’ personalities, living habits and social lives, rather than simply applying a cookie cutter methodology.",
+      ],
+      details: [
+        "Renovations and Extension Plans",
+        "Architectural Drafting",
+        "Virtual Reality",
+        "3D Illustrations",
+        "Marketing floor plans",
+        "DA Submissions and handing the process",
+        "Site Analysis and help with understanding your site constraints",
       ],
       src: "https://images.unsplash.com/photo-1670589953882-b94c9cb380f5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     });
@@ -103,6 +124,16 @@ createServer({
       desc: [
         "So we design homes accordingly taking into consideration factors such as the occupants’ personalities, living habits and social lives, rather than simply applying a cookie cutter methodology.",
       ],
+      details: [
+        "Color & Material Selections",
+        "Fixtures, Fittings and Appliance Selections",
+        "Virtual Reality",
+        "Electrical and Lighting Plans",
+        "3D Illustrations",
+        "Exterior Color & Material Schemes",
+        "Interior & Exterior Scheduling",
+        "Window Furnishing Selections",
+      ],
       src: "https://plus.unsplash.com/premium_photo-1661877303180-19a028c21048?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     });
     server.create("service", {
@@ -110,6 +141,16 @@ createServer({
       title: "multi-Residential",
       desc: [
         "So we design homes accordingly taking into consideration factors such as the occupants’ personalities, living habits and social lives, rather than simply applying a cookie cutter methodology.",
+      ],
+      details: [
+        "Building Design",
+        "Custom New Homes",
+        "Architectural Drafting",
+        " BASIX Certificates (single dwellings)",
+        "3D Illustrations",
+        "Marketing floor plans",
+        "DA Submissions and handing the process",
+        "Site Analysis and help with understanding your site constraints",
       ],
       src: "https://images.unsplash.com/photo-1698362695891-8628b6ff6802?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     });
