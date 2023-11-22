@@ -37,6 +37,9 @@
   align-items: flex-end;
   cursor: pointer;
 }
+.trigger-element i {
+  color: #454545;
+}
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -70,20 +73,20 @@
 }
 .closed {
   position: absolute;
-  width: 100%;
-  padding: 3rem 0;
+  width: 110%;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   letter-spacing: 1px;
   gap: 2rem;
   font-family: "Open Sans", serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   align-items: center;
   top: 80%;
   left: 0;
   background-color: #fff;
-  box-shadow: 2px 4px 3px rgb(0, 0, 0, 0.1);
-  transform: translateY(-100vh);
+  box-shadow: 2px 4px 5px 6px rgb(0, 0, 0, 0.5);
+  transform: translateY(-200vh);
   transition: all 1s ease-in-out;
 }
 .closed a {
@@ -95,8 +98,8 @@
 }
 
 .closed div {
-  width: 100vw;
-  height: 2.5rem;
+  width: 110vw;
+  height: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,19 +115,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  padding: 2.5rem 0;
+  font-size: 0.8rem;
+  padding: 5px 0;
   color: #7d7c7c;
-  background-color: #f1efef;
+  background-color: #f3f3f3;
 }
 .drop-button {
   position: absolute;
-  right: 2rem;
+  right: 4rem;
   border: none;
-  background-color: #fff;
+  color: #454545;
+  background-color: transparent;
   font-size: 1.1rem;
 }
 .hamburger-links {
+  background-color: #eeeeee;
   transform: translateY(0);
 }
 @media (min-width: 962px) {
