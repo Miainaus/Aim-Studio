@@ -10,7 +10,7 @@
   gap: 2rem;
 }
 .filterLinks {
-  width: 100%;
+  width: 70%;
   height: 10vh;
   display: flex;
   align-items: flex-end;

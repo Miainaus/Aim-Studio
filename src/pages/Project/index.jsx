@@ -113,6 +113,7 @@ const Project = () => {
           renderArrowsWhenDisabled={false}
           renderButtonGroupOutside={false}
           renderDotsOutside={true}
+          removeArrowOnDeviceType={["tablet", "mobile"]}
           responsive={{
             desktop: {
               breakpoint: {
