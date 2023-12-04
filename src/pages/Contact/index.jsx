@@ -22,11 +22,10 @@ const Contact = () => {
       .then(
         () => {
           alert("Message successfully sent!");
-          window.location.reload(false);
+          window.location.reload(true);
         },
         (error) => {
-          console.log("Failed to send the message:", error);
-          // alert("Failed to send the message, please try again");
+          alert("Failed to send the message, please try again");
         }
       );
   };
