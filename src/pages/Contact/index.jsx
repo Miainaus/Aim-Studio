@@ -22,7 +22,6 @@ const Contact = () => {
       .then(
         () => {
           alert("Message successfully sent!");
-          window.location.reload(true);
         },
         (error) => {
           alert("Failed to send the message, please try again");
@@ -68,7 +67,7 @@ const Contact = () => {
                 ></textarea>
               </li>
               <li>
-                <input type="submit" className="flat-button" value="SEND" />
+                <input type='submit' className='flat-button' value='SEND' />
               </li>
             </ul>
           </form>
