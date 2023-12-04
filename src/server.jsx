@@ -87,7 +87,8 @@ createServer({
         "3D Illustrations",
         "Marketing floor plans",
         "DA Submissions and handing the process",
-        "Site Analysis and help with understanding your site constraints"],
+        "Site Analysis and help with understanding your site constraints",
+      ],
       src: "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     });
     server.create("service", {
@@ -175,5 +176,6 @@ createServer({
       const title = request.params.title;
       return schema.services.where((service) => service.title === title);
     });
+    this.passthrough("https://api.emailjs.com/**");
   },
 });
